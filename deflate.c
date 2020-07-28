@@ -6,7 +6,9 @@ int deflate(unsigned char *, unsigned, unsigned char *, unsigned *);
 #define MAXCODES 316
 #define FIXLCODES 288
 
-// Almost everything copied...
+// Implementation of the deflate (LZSS + Huffman Coding) algorithm 
+// Almost everything copied from puff.c by Dr. Mark Adler
+// Didn't even know where to start -_- -_- *_*
 struct state
 {
     unsigned char *input;
