@@ -19,7 +19,7 @@ C is called from C++ with the help of extern "C" block and linked with object fi
 
 <br>
 Use : ./PNG_file_viewer image_name.png
-Note : No support for zoom or any other features... {\  /}
+Note : No support for zoom or any other features... <br>{\  /}
 <br>                                                 (-_-)
 <br>
 
