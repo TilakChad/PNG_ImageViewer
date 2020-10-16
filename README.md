@@ -25,4 +25,17 @@ Note : No support for zoom or any other features... <br>{\  /}
 
 # independent_src
 This contains image viewer that should compile fine on any OPENGL-supported OS(platform). Need to have Glad (can be generated easily from https://glad.dav1d.de/) and glfw3 library though. 'src' and 'indpendent_src' have same except the defualt image renderer. Src use Qt as image renderer while latter uses OpenGL.
+<br>
+<br>
+Dependency for linux : sudo apt install libglfw3-dev
+<br>
+glad generated from above link
+<br>
+Any C compiler supporting C98 standard or above
+<br>
+Compile instruction : 
+<br>
+gcc image_viewer.c deflate.c image.c ./glad/src/glad.c -lglfw -ldl -o output
+<br>
+
 
