@@ -1,6 +1,9 @@
 #include "glad/include/glad/glad.h"
 
-#include "glfw3/include/GLFW/glfw3.h"
+#ifdef _WIN32
+    #include "glfw3/include/GLFW/glfw3.h"
+#elif __linux__
+    #include <GLFW/glfw3.h>
 #include "image.h"
 
 float screen_height = 720;
