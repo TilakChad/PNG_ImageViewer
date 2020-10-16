@@ -122,7 +122,7 @@ int main(int argc, char **argv)
         glBufferData(GL_ARRAY_BUFFER, 5 * sizeof(float) * width * height, vertices, GL_STATIC_DRAW);
     const char *vertexShaderSource[] =
         {
-            "#version 460 core\n",
+            "#version 400 core\n",
             "layout (location = 0) in vec2 aPos;\n",
             "layout (location = 1) in vec4 aColor;\n",
             "out vec4 Color;\n",
@@ -132,7 +132,7 @@ int main(int argc, char **argv)
 
     const char *fragmentShaderSource[] =
         {
-            "#version 460 core\n",
+            "#version 400 core\n",
             "in vec4 Color;",
             "out vec4 fragColor;",
             "void main(){\n",
