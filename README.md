@@ -23,3 +23,6 @@ Note : No support for zoom or any other features... <br>{\  /}
 <br>                                                 (-_-)
 <br>
 
+# independent_src
+This contains image viewer that should compile fine on any OPENGL-supported OS. Need to have Glad (can be generated easily from https://glad.dav1d.de/) and glfw3 library though.
+
