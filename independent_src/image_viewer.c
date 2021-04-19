@@ -4,12 +4,14 @@
     #include "glfw3/include/GLFW/glfw3.h"
 #elif __linux__
     #include <GLFW/glfw3.h>
+#endif
+
 #include "image.h"
 
 float screen_height = 720;
 float screen_width = 1280;
 
-[[noreturn]] void error_callback(int code, const char *description)
+void error_callback(int code, const char *description)
 {
     fputs(description, stderr);
     exit(EXIT_FAILURE);
